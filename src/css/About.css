@@ -64,7 +64,8 @@
   line-height: 1.9;
   letter-spacing: 0.02em;
   color: #333;
-  text-align: left; /* IMPORTANT */
+
+  text-align: justify;
 }
 
 @media screen and (max-width: 900px) {
