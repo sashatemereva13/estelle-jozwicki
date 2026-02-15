@@ -2,73 +2,73 @@ export const seriesData = {
   serie1: [
     {
       src: "/serie1/serie1-1.jpg",
-      title: "Module1",
+      title: "Module 1",
     },
 
     {
       src: "/serie1/serie1-2.jpg",
-      title: "Module2",
+      title: "Module 1",
     },
 
     {
       src: "/serie1/serie1-3.jpg",
-      title: "Module3",
+      title: "Module 2",
     },
     {
       src: "/serie1/serie1-4.jpg",
-      title: "Module4",
+      title: "Module 2",
     },
     {
       src: "/serie1/serie1-5.jpg",
-      title: "Module5",
+      title: "Module 3",
     },
     {
       src: "/serie1/serie1-6.jpg",
-      title: "Module6",
+      title: "Module 3",
     },
     {
       src: "/serie1/serie1-7.jpg",
-      title: "Module7",
+      title: "Module 4",
     },
     {
       src: "/serie1/serie1-8.jpg",
-      title: "Module8",
+      title: "Module 5",
     },
     {
       src: "/serie1/serie1-9.jpg",
-      title: "Module9",
+      title: "Module 5",
     },
     {
       src: "/serie1/serie1-10.jpg",
-      title: "Module10",
+      title: "Module 6",
     },
     {
       src: "/serie1/serie1-11.jpg",
-      title: "Module11",
+      title: "Module 6",
     },
     {
       src: "/serie1/serie1-12.jpg",
-      title: "Module12",
+      title: "Module 7",
     },
     {
       src: "/serie1/serie1-13.jpg",
-      title: "Module13",
+      title: "Module 7",
     },
     {
       src: "/serie1/serie1-14.jpg",
-      title: "Module14",
+      title: "Module 8",
     },
     {
       src: "/serie1/serie1-15.jpg",
-      title: "Module15",
+      title: "Module 9",
     },
     {
       src: "/serie1/serie1-16.jpg",
-      title: "Module16",
+      title: "Module 10",
     },
     {
       src: "/serie1/serie1-17.jpg",
-      title: "Module17",
+      title: "Module 10",
     },
   ],
 
@@ -80,102 +80,102 @@ export const seriesData = {
 
     {
       src: "/serie2/serie2-2.webp",
-      title: "Module 2",
+      title: "Module 1",
     },
 
     {
       src: "/serie2/serie2-3.webp",
-      title: "Module 3",
+      title: "Module 1",
     },
 
     {
       src: "/serie2/serie2-4.webp",
-      title: "Module 4",
+      title: "Module 2",
     },
 
     {
       src: "/serie2/serie2-5.webp",
-      title: "Module 5",
+      title: "Module 2",
     },
     {
       src: "/serie2/serie2-6.webp",
-      title: "Module 6",
+      title: "Module 3",
     },
     {
       src: "/serie2/serie2-7.webp",
-      title: "Module 7",
+      title: "Module 4",
     },
     {
       src: "/serie2/serie2-8.webp",
-      title: "Module 8",
+      title: "Module 4",
     },
     {
       src: "/serie2/serie2-9.webp",
-      title: "Module 9",
+      title: "Module 4",
     },
     {
       src: "/serie2/serie2-10.webp",
-      title: "Module 10",
+      title: "Module 5",
     },
     {
       src: "/serie2/serie2-11.webp",
-      title: "Module 11",
+      title: "Module 6",
     },
     {
       src: "/serie2/serie2-12.webp",
-      title: "Module 12",
+      title: "Module 7",
     },
     {
       src: "/serie2/serie2-13.webp",
-      title: "Module 13",
+      title: "Module 8",
     },
     {
       src: "/serie2/serie2-14.webp",
-      title: "Module 14",
+      title: "Module 8",
     },
     {
       src: "/serie2/serie2-15.webp",
-      title: "Module 15",
+      title: "Module 8",
     },
     {
       src: "/serie2/serie2-16.webp",
-      title: "Module 16",
+      title: "Module 9",
     },
     {
       src: "/serie2/serie2-17.webp",
-      title: "Module 17",
+      title: "Module 9",
     },
     {
       src: "/serie2/serie2-18.webp",
-      title: "Module 18",
+      title: "Module 10",
     },
     {
       src: "/serie2/serie2-19.webp",
-      title: "Module 19",
+      title: "Module 10",
     },
     {
       src: "/serie2/serie2-20.webp",
-      title: "Module 20",
+      title: "Module 11",
     },
 
     {
       src: "/serie2/serie2-21.webp",
-      title: "Module 21",
+      title: "Module 12",
     },
 
     {
       src: "/serie2/serie2-22.webp",
-      title: "Module 22",
+      title: "Module 12",
     },
 
     {
       src: "/serie2/serie2-23.webp",
-      title: "Module 23",
+      title: "Module 13",
     },
 
     {
       src: "/serie2/serie2-24.webp",
-      title: "Module 24",
+      title: "Module 13",
     },
   ],
   serie3: [
