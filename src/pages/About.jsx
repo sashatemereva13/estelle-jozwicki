@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section className="aboutPage">
       <div className="aboutContainer">
-        <h2 className="aboutTitle">{t("about.title")}</h2>
+        {/* <h2 className="aboutTitle">{t("about.title")}</h2> */}
 
         <div className="flexRowAbout">
           <img
