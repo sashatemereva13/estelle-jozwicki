@@ -231,6 +231,7 @@
   .seriesNav {
     font-size: 1.2rem;
     gap: 2rem;
+    top: 5rem;
   }
 
   .introText {
@@ -257,15 +258,8 @@
   }
 
   .workImage {
-    width: 95%;
-  }
-}
-
-@media (max-width: 768px) {
-  .workImage {
     width: 90%;
   }
-
   .workDescription {
     max-width: 90%;
   }

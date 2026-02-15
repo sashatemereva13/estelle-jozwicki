@@ -16,11 +16,12 @@
 
   background: transparent;
   z-index: 100;
+
   font-family: "SNPro", sans-serif;
 }
 
 /* ========================================
-   LEFT
+   LEFT SIDE
 ======================================== */
 
 .navLeft {
@@ -29,40 +30,8 @@
   gap: 1.5rem;
 }
 
-.menuButton {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
 /* ========================================
-   MENU LINES
-======================================== */
-
-.lines {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.lines span {
-  width: 22px;
-  height: 1px;
-  background: var(--text);
-  transition: transform 0.3s ease;
-}
-
-.lines.open span:first-child {
-  transform: translateY(3px);
-}
-
-.lines.open span:last-child {
-  transform: translateY(-3px);
-}
-
-/* ========================================
-   BRAND (CENTERED LIKE DIOR)
+   BRAND (CENTERED)
 ======================================== */
 
 .brandName {
@@ -86,105 +55,16 @@
 }
 
 /* ========================================
-   DROPDOWN
-======================================== */
-
-.dropdown {
-  position: absolute;
-  top: 2.5rem;
-  left: 5rem;
-
-  background: var(--bg);
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-}
-
-.dropdown a {
-  text-decoration: none;
-  color: var(--text);
-  opacity: 0.55;
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-  transition: opacity 0.25s;
-
-  font-family: "SNPro", sans-serif;
-}
-
-.dropdown a:hover,
-.dropdown a.active {
-  opacity: 1;
-}
-
-/* ========================================
-   RIGHT ICONS
-======================================== */
-
-.navRight {
-  display: flex;
-  gap: 1.2rem;
-}
-
-.navRight a {
-  color: var(--text);
-  opacity: 0.6;
-  transition: opacity 0.2s;
-}
-
-.navRight a:hover {
-  opacity: 1;
-}
-
-.langToggle {
-  background: none;
-  border: none;
-  font-family: inherit;
-  cursor: pointer;
-
-  font-size: 0.9rem;
-  letter-spacing: 0.12em;
-
-  opacity: 0.6;
-  transition: opacity 0.25s;
-
-  color: var(--text);
-  padding: 0;
-}
-
-.langToggle:hover {
-  opacity: 1;
-}
-
-/* ========================================
-   MOBILE
-======================================== */
-
-@media (max-width: 768px) {
-  .navWrapper {
-    padding: 1.5rem 1.5rem;
-  }
-
-  .brandName {
-    font-size: 0.85rem;
-    letter-spacing: 0.14em;
-  }
-}
-
-/* ========================================
-   RIGHT SIDE — TYPOGRAPHIC
+   RIGHT SIDE
 ======================================== */
 
 .navRight {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-
-  font-family: "SNPro", sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
 }
+
+/* Shared nav typography */
 
 .langToggle,
 .contactButton {
@@ -192,9 +72,19 @@
   border: none;
   cursor: pointer;
   color: var(--text);
-  opacity: 0.6;
 
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  opacity: 0.6;
   transition: opacity 0.25s;
+
+  -webkit-font-smoothing: antialiased;
+
+  text-decoration: none;
+
+  font-family: "SNPro", sans-serif;
 }
 
 .langToggle:hover,
@@ -204,6 +94,40 @@
 
 .divider {
   opacity: 0.3;
+}
+
+/* ========================================
+   DROPDOWNS
+======================================== */
+
+.dropdown {
+  position: absolute;
+  top: 2.5rem;
+  left: 5rem;
+
+  background: var(--bg);
+  padding: 1rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: var(--text);
+
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+
+  opacity: 0.55;
+  transition: opacity 0.25s;
+  font-family: "SNPro", sans-serif;
+}
+
+.dropdown a:hover,
+.dropdown a.active {
+  opacity: 1;
 }
 
 /* ========================================
@@ -218,26 +142,99 @@
   position: absolute;
   top: 2.2rem;
   right: 0;
-  text-align: right;
+
+  padding: 0.8rem 1rem;
+  background: var(--bg);
 
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 
-  padding: 0.8rem 1rem;
-
-  background: var(--bg);
+  text-align: right;
 }
 
 .contactDropdown a {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+
   text-decoration: none;
   color: var(--text);
+
   opacity: 0.6;
-  font-size: 0.6rem;
-  font-family: "SNPro", sans-serif;
   transition: opacity 0.25s;
 }
 
 .contactDropdown a:hover {
   opacity: 1;
+}
+
+/* ========================================
+   MENU BUTTON
+======================================== */
+
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* ========================================
+   MENU LINES
+======================================== */
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lines span {
+  width: 22px;
+  height: 1px;
+  background: var(--text);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  transform-origin: center;
+}
+
+/* Open state */
+.lines.open span:first-child {
+  transform: translateY(3px);
+}
+
+.lines.open span:last-child {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .navRight {
+    gap: 0.5rem;
+  }
+
+  .navRight button {
+    padding: 0.3rem;
+  }
+
+  .navWrapper {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .brandName {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+  }
+
+  .langToggle,
+  .contactButton {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+
+  .dropdown {
+    left: 0.5rem;
+    top: 3rem;
+    font-size: 0.8rem;
+  }
 }

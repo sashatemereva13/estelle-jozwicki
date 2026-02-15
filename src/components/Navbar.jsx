@@ -8,7 +8,6 @@ import { useLanguage } from "../i18n/LanguageContext";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const { lang, toggle, t } = useLanguage();
-  const [contactOpen, setContactOpen] = useState(false);
 
   const menuVariants = {
     closed: {
@@ -83,26 +82,9 @@ export default function Navbar() {
 
         {/* contact */}
         <div className="contactWrapper">
-          <button
-            className="contactButton"
-            onClick={() => setContactOpen(!contactOpen)}
-          >
-            CONTACT
-          </button>
-
-          <AnimatePresence>
-            {contactOpen && (
-              <motion.div
-                className="contactDropdown"
-                initial={{ opacity: 0, y: -8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.35 }}
-              >
-                <a href="mailto:jozwickiestelle@gmail.com">Email</a>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          <a className="contactButton" href="mailto:jozwickiestelle@gmail.com">
+            Email
+          </a>
         </div>
       </div>
     </header>
