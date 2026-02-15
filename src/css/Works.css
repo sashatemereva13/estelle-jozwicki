@@ -1,0 +1,272 @@
+/* ========================================
+   WORKS PAGE — Editorial Immersive Layout
+======================================== */
+
+.worksPage {
+  margin-top: 2rem;
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+/* ========================================
+   SERIES NAVIGATION (typographic style)
+======================================== */
+
+.seriesNav {
+  position: fixed;
+  right: 2rem;
+  top: 8rem;
+  display: flex;
+  justify-content: end;
+  gap: 3.5rem;
+
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+}
+
+.seriesItem {
+  cursor: pointer;
+  opacity: 0.35;
+  position: relative;
+  transition: opacity 0.25s ease;
+}
+
+.seriesItem:hover {
+  opacity: 0.7;
+}
+
+.seriesItem.active {
+  opacity: 1;
+}
+
+.seriesItem.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  background: var(--text);
+}
+
+/* ========================================
+   INTRO SECTION (Split Editorial Layout)
+======================================== */
+
+.seriesIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+/* TEXT SIDE */
+
+.introText {
+  flex: 1;
+  max-width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+/* subtle separation line */
+.introText::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: var(--text);
+  opacity: 0.25;
+  margin-bottom: 1.5rem;
+}
+
+/* title */
+.introText h2 {
+  font-family: "Cormorant", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+/* description */
+.introText p {
+  font-family: "SNPro", sans-serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* IMAGE SIDE */
+
+.introImageWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.introImage {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.12);
+}
+
+/* Instruction that fades in */
+
+.imageInstruction {
+  position: absolute;
+  bottom: -40px;
+
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+
+  text-align: center;
+}
+
+/* ========================================
+   GALLERY SECTION
+======================================== */
+
+.gallerySection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workImage:hover {
+  opacity: 0.96;
+}
+
+.gallerySection {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galleryItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.workImage {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.workDescription {
+  max-width: 320px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.workDescription p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.7;
+  margin: 3rem 0;
+}
+
+.clickHint {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  margin-top: -2rem;
+
+  opacity: 0.45;
+}
+
+.workImage {
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.workImage:hover {
+  transform: scale(1.01);
+  opacity: 0.95;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1024px) {
+  .seriesIntro {
+    gap: 3rem;
+  }
+
+  .introImage {
+    max-height: 60vh;
+  }
+
+  .workImage {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .seriesNav {
+    font-size: 1.2rem;
+    gap: 2rem;
+  }
+
+  .introText {
+    max-width: 90%;
+    align-items: center;
+  }
+
+  .introText::before {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .introImageWrapper {
+    width: 100%;
+  }
+
+  .introImage {
+    width: 90%;
+  }
+
+  .imageInstruction {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .workImage {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .workImage {
+    width: 90%;
+  }
+
+  .workDescription {
+    max-width: 90%;
+  }
+}

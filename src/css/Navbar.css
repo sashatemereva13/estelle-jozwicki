@@ -1,0 +1,243 @@
+/* ========================================
+   NAV WRAPPER
+======================================== */
+
+.navWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 3rem;
+
+  background: transparent;
+  z-index: 100;
+  font-family: "SNPro", sans-serif;
+}
+
+/* ========================================
+   LEFT
+======================================== */
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* ========================================
+   MENU LINES
+======================================== */
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lines span {
+  width: 22px;
+  height: 1px;
+  background: var(--text);
+  transition: transform 0.3s ease;
+}
+
+.lines.open span:first-child {
+  transform: translateY(3px);
+}
+
+.lines.open span:last-child {
+  transform: translateY(-3px);
+}
+
+/* ========================================
+   BRAND (CENTERED LIKE DIOR)
+======================================== */
+
+.brandName {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  text-decoration: none;
+  color: var(--text);
+
+  font-size: 1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  transition: opacity 0.25s ease;
+}
+
+.brandName:hover {
+  opacity: 0.7;
+}
+
+/* ========================================
+   DROPDOWN
+======================================== */
+
+.dropdown {
+  position: absolute;
+  top: 2.5rem;
+  left: 5rem;
+
+  background: var(--bg);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: var(--text);
+  opacity: 0.55;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  transition: opacity 0.25s;
+
+  font-family: "SNPro", sans-serif;
+}
+
+.dropdown a:hover,
+.dropdown a.active {
+  opacity: 1;
+}
+
+/* ========================================
+   RIGHT ICONS
+======================================== */
+
+.navRight {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navRight a {
+  color: var(--text);
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.navRight a:hover {
+  opacity: 1;
+}
+
+.langToggle {
+  background: none;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+
+  opacity: 0.6;
+  transition: opacity 0.25s;
+
+  color: var(--text);
+  padding: 0;
+}
+
+.langToggle:hover {
+  opacity: 1;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+  .navWrapper {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .brandName {
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
+  }
+}
+
+/* ========================================
+   RIGHT SIDE — TYPOGRAPHIC
+======================================== */
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  font-family: "SNPro", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.langToggle,
+.contactButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+  opacity: 0.6;
+
+  transition: opacity 0.25s;
+}
+
+.langToggle:hover,
+.contactButton:hover {
+  opacity: 1;
+}
+
+.divider {
+  opacity: 0.3;
+}
+
+/* ========================================
+   CONTACT DROPDOWN
+======================================== */
+
+.contactWrapper {
+  position: relative;
+}
+
+.contactDropdown {
+  position: absolute;
+  top: 2.2rem;
+  right: 0;
+  text-align: right;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  padding: 0.8rem 1rem;
+
+  background: var(--bg);
+}
+
+.contactDropdown a {
+  text-decoration: none;
+  color: var(--text);
+  opacity: 0.6;
+  font-size: 0.6rem;
+  font-family: "SNPro", sans-serif;
+  transition: opacity 0.25s;
+}
+
+.contactDropdown a:hover {
+  opacity: 1;
+}
