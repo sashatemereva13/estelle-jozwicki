@@ -104,7 +104,7 @@
   position: absolute;
   top: 2.5rem;
   left: 5rem;
-
+  z-index: 200;
   background: var(--bg);
   padding: 1rem 2rem;
 
