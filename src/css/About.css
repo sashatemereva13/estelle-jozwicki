@@ -66,3 +66,24 @@
   color: #333;
   text-align: left; /* IMPORTANT */
 }
+
+@media screen and (max-width: 900px) {
+  .aboutPage {
+    padding: 2rem 1.5rem;
+  }
+
+  .flexRowAbout {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .aboutImage {
+    width: 90%;
+    max-width: none;
+  }
+
+  .aboutTextWrapper {
+    max-width: none;
+    width: 90%;
+  }
+}

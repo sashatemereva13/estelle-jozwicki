@@ -224,6 +224,7 @@
   .brandName {
     font-size: 0.8rem;
     letter-spacing: 0.12em;
+    left: 40%;
   }
 
   .langToggle,
