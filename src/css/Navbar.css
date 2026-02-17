@@ -208,6 +208,48 @@
   transform: translateY(-3px);
 }
 
+/* ========================================
+   LANGUAGE SWITCH
+======================================== */
+
+.langSwitch {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.langItem {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  padding: 0.4rem;
+
+  font-family: "SNPro", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  color: var(--text);
+
+  opacity: 0.35;
+  transition: opacity 0.25s ease;
+
+  position: relative;
+}
+
+.langItem:hover {
+  opacity: 0.8;
+}
+
+.langItem.active {
+  opacity: 1;
+}
+
+.langDivider {
+  opacity: 0.4;
+}
+
 @media (max-width: 768px) {
   .navRight {
     gap: 0.5rem;

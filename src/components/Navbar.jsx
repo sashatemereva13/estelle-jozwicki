@@ -74,11 +74,29 @@ export default function Navbar() {
       {/* RIGHT */}
       <div className="navRight">
         {/* language */}
-        <button className="langToggle" onClick={toggle}>
-          {lang.toUpperCase()}
-        </button>
+        <div className="langSwitch">
+          <button
+            className={`langItem ${lang === "fr" ? "active" : ""}`}
+            onClick={() => {
+              if (lang !== "fr") toggle();
+            }}
+          >
+            FR
+          </button>
 
-        <span className="divider">|</span>
+          <span className="langDivider">/</span>
+
+          <button
+            className={`langItem ${lang === "en" ? "active" : ""}`}
+            onClick={() => {
+              if (lang !== "en") toggle();
+            }}
+          >
+            EN
+          </button>
+        </div>
+
+        {/* <span className="divider">|</span> */}
 
         {/* contact */}
         <div className="contactWrapper">
