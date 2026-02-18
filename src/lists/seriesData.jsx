@@ -60,15 +60,15 @@ export const seriesData = {
     },
     {
       src: "/serie1/serie1-15.jpg",
-      title: "Module 9",
+      title: "Module 8",
     },
     {
       src: "/serie1/serie1-16.jpg",
-      title: "Module 10",
+      title: "Module 9",
     },
     {
       src: "/serie1/serie1-17.jpg",
-      title: "Module 10",
+      title: "Module 9",
     },
   ],
 
@@ -80,12 +80,12 @@ export const seriesData = {
 
     {
       src: "/serie2/serie2-2.webp",
-      title: "Module 1",
+      title: "Module 2",
     },
 
     {
       src: "/serie2/serie2-3.webp",
-      title: "Module 1",
+      title: "Module 2",
     },
 
     {
@@ -127,7 +127,7 @@ export const seriesData = {
     },
     {
       src: "/serie2/serie2-13.webp",
-      title: "Module 8",
+      title: "Module 7",
     },
     {
       src: "/serie2/serie2-14.webp",
