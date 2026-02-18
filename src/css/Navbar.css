@@ -281,3 +281,12 @@
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 370px) {
+  .contactWrapper {
+    visibility: hidden;
+  }
+  .navRight {
+    flex-direction: row-reverse;
+  }
+}
