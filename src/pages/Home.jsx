@@ -8,7 +8,10 @@ export default function Home() {
     <section className="homePage">
       <img className="heroImage" src={artwork} alt="Œuvre principale" />
 
-      <p className="heroDescription">{t("home.description")}</p>
+      <p className="heroDescription">{t("home.description1")}</p>
+      <p className="heroDescription">{t("home.description2")}</p>
+      <p className="heroDescription">{t("home.description3")}</p>
+      <p className="heroDescription">{t("home.description4")}</p>
     </section>
   );
 }

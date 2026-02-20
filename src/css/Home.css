@@ -22,9 +22,10 @@
 /* description */
 
 .heroDescription {
+  margin: -1rem 0;
   max-width: 90%;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: var(--muted);
+  color: var(--text);
   text-align: justify;
 }

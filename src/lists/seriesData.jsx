@@ -234,5 +234,21 @@ export const seriesData = {
       src: "/serie3/serie3-13.webp",
       title: "Hommage 13",
     },
+    {
+      src: "/serie3/serie3-14.webp",
+      title: "Hommage 14",
+    },
+    {
+      src: "/serie3/serie3-15.webp",
+      title: "Hommage 15",
+    },
+    {
+      src: "/serie3/serie3-16.webp",
+      title: "Hommage 16",
+    },
+    {
+      src: "/serie3/serie3-17.webp",
+      title: "Hommage 17",
+    },
   ],
 };

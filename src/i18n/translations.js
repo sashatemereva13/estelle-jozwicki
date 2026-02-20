@@ -8,21 +8,22 @@ export const translations = {
     },
 
     home: {
-      description: `Le questionnement sur l’espace, 
-      l’architecture et l’expérience que l’on peut en faire est au cœur de mon travail. 
-      Il peut prendre une forme de dimension architecturale et aussi de petite taille. 
- 
-      Une partie de mon travail propose un dispositif déambulatoire in situ invitant à 
+      description1: `Le questionnement sur l’espace,
+      l’architecture et l’expérience que l’on peut en faire est au cœur de mon travail.
+      Il peut prendre une forme de dimension architecturale et aussi de petite taille.`,
+
+      description2: `Une partie de mon travail propose un dispositif déambulatoire in situ invitant à
       questionner l’espace, l’engagement du corps dans l’espace, son intériorité.
-      Notre corps et notre esprit sont mis à contribution dans ces installations afin de 
+      Notre corps et notre esprit sont mis à contribution dans ces installations afin de
       percevoir un autre prisme sur le monde qui nous entoure et sur nous-même.
- 
-      L’autre partie consiste à penser l’architecture en miniature comme un élan purement créatif, 
+      `,
+
+      description3: `L’autre partie consiste à penser l’architecture en miniature comme un élan purement créatif,
       un jeu ludique de formes et de lignes se matérialisant par des esquisses tridimensionnelles.
-      Elles n’ont de volonté que de montrer la créativité de la forme architecturale comme un objet 
-      plastique et esthétique construit sur base du dessin et de la peinture.
- 
-      Le minimalisme et l’illusion d’un équilibre fragile du dispositif des matériaux qui constituent 
+      Elles n’ont de volonté que de montrer la créativité de la forme architecturale comme un objet
+      plastique et esthétique construit sur base du dessin et de la peinture.`,
+
+      description4: `Le minimalisme et l’illusion d’un équilibre fragile du dispositif des matériaux qui constituent
       mon travail, mettent en lumière le caractère impermanent de notre existence humaine.`,
     },
 
@@ -81,20 +82,20 @@ la gratitude de la préciosité de notre vie.`,
     },
 
     home: {
-      description: `The questioning of space, architecture, and the experience one can have within it lies at the heart of my work. 
-  It may take the form of architectural scale or exist on a more intimate, small scale.
+      description1: `The questioning of space, architecture, and the experience one can have within it lies at the heart of my work.
+  It may take the form of architectural scale or exist on a more intimate, small scale.`,
 
-  Part of my practice proposes an in situ, ambulatory installation inviting viewers to question space, 
-  the body’s engagement within space, and its interiority. 
-  Both body and mind are engaged in these installations in order to perceive a different prism 
-  through which to view the world around us and ourselves.
+      description2: `Part of my practice proposes an in situ, ambulatory installation inviting viewers to question space,
+  the body’s engagement within space, and its interiority.
+  Both body and mind are engaged in these installations in order to perceive a different prism
+  through which to view the world around us and ourselves.`,
 
-  The other part of my work consists in imagining architecture in miniature as a purely creative impulse — 
-  a playful interplay of forms and lines materializing as three-dimensional sketches. 
-  They seek only to reveal the creativity of architectural form as a plastic and aesthetic object, 
-  constructed through drawing and painting.
+      description3: `The other part of my work consists in imagining architecture in miniature as a purely creative impulse —
+  a playful interplay of forms and lines materializing as three-dimensional sketches.
+  They seek only to reveal the creativity of architectural form as a plastic and aesthetic object,
+  constructed through drawing and painting.`,
 
-  Minimalism and the illusion of a fragile balance within the arrangement of materials that compose my work 
+      description4: `Minimalism and the illusion of a fragile balance within the arrangement of materials that compose my work
   bring to light the impermanent nature of our human existence.`,
     },
 
