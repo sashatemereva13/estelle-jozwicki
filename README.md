@@ -1,16 +1,66 @@
-# React + Vite
+# Estelle Jozwicki — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Custom-built bilingual portfolio website developed by **Sasha13Studio**.
 
-Currently, two official plugins are available:
+This project was architected as a high-performance, custom-coded platform prioritising visual integrity, structural clarity, and long-term scalability.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This website is not template-based (Wix / WordPress).  
+It is developed from scratch using a modern front-end architecture and deployed through an automated CI/CD pipeline.
 
-## Expanding the ESLint configuration
+The project was designed to:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Preserve minimalist aesthetic precision
+- Ensure performance across devices
+- Support bilingual content (FR / EN)
+- Maintain clean deployment standards
+- Provide scalability for future content growth
+
+---
+
+## Technical Architecture
+
+### Stack
+
+- **React** — Front-end framework
+- **Vite** — Build system
+- **Custom CSS architecture**
+- **GitHub** — Version control
+- **GitHub Actions** — Automated deployment (CI/CD)
+- **Hostinger VPS** — Dedicated hosting environment
+
+---
+
+## Deployment Flow
+
+The website follows a controlled publishing pipeline:
+
+1. Code updates are committed locally
+2. Changes are pushed to GitHub
+3. GitHub Actions triggers deployment
+4. Secure SSH connection updates the VPS
+5. The live website reflects the new build
+
+This ensures:
+
+- Version control integrity
+- Reliable publishing
+- Clean production builds
+- Minimal deployment errors
+
+---
+
+## Content Structure
+
+Content is structured to allow potential evolution toward a content-driven architecture.
+
+Current structure includes:
+
+- Bilingual translations (FR / EN)
+- Modular component architecture
+- Dedicated public media directory
+
+If a CMS layer is implemented, content may be structured under:
