@@ -64,3 +64,59 @@ Current structure includes:
 - Dedicated public media directory
 
 If a CMS layer is implemented, content may be structured under:
+
+```
+/content
+/i18n
+/works
+/public/uploads
+```
+
+---
+
+## Media Optimisation Policy
+
+All images are converted to **WebP format** before deployment.
+
+This ensures:
+
+- Faster loading time
+- Reduced bandwidth usage
+- Improved mobile performance
+- SEO optimisation
+- Scalable media handling as the artwork archive grows
+
+Future uploads should follow the same optimisation standard to maintain performance integrity.
+
+---
+
+## Security & Access
+
+For security reasons:
+
+- Root VPS credentials are not publicly exposed
+- Access transfers are handled through account ownership changes
+- Deployment keys are managed securely
+
+Infrastructure access can be transferred upon request.
+
+---
+
+## Maintenance & Evolution
+
+The current architecture supports two autonomy pathways:
+
+1. Developer-managed updates (direct repository workflow)
+2. Integration of a structured CMS layer for editorial autonomy
+
+The platform has been engineered with scalability in mind and can evolve into a fully modular content management architecture if required.
+
+---
+
+## Developed by
+
+**Sasha Temereva**  
+Founder — Sasha13Studio  
+Digital Architecture & Immersive Web Systems
+
+---
