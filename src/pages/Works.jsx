@@ -49,6 +49,8 @@ export default function Works() {
     (v) => `brightness(${v})`,
   );
 
+  const navOpacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
+
   /* -------------------------
      SERIES CHANGE
   ------------------------- */
@@ -105,17 +107,22 @@ export default function Works() {
   return (
     <section className="worksPage">
       {/* NAV */}
-      <div className="seriesNav">
+      <motion.div
+        className="seriesNav"
+        style={{
+          opacity: navOpacity,
+        }}
+      >
         {Object.keys(seriesData).map((serie) => (
           <span
             key={serie}
             className={`seriesItem ${currentSeries === serie ? "active" : ""}`}
             onClick={() => changeSeries(serie)}
           >
-            {serie}
+            {serie.replace('serie', 'Série ')}
           </span>
         ))}
-      </div>
+      </motion.div>
 
       <div ref={introRef} className="seriesIntro">
         {/* LEFT SIDE TEXT */}

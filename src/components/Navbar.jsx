@@ -73,37 +73,29 @@ export default function Navbar() {
 
       {/* RIGHT */}
       <div className="navRight">
-        {/* language */}
-        <div className="langSwitch">
-          <button
-            className={`langItem ${lang === "fr" ? "active" : ""}`}
-            onClick={() => {
-              if (lang !== "fr") toggle();
-            }}
-          >
-            FR
-          </button>
+        <button
+          className={`langToggle ${lang === "fr" ? "active" : ""}`}
+          onClick={() => {
+            if (lang !== "fr") toggle();
+          }}
+        >
+          FR
+        </button>
 
-          <span className="langDivider">/</span>
+        <span className="langDivider">/</span>
 
-          <button
-            className={`langItem ${lang === "en" ? "active" : ""}`}
-            onClick={() => {
-              if (lang !== "en") toggle();
-            }}
-          >
-            EN
-          </button>
-        </div>
+        <button
+          className={`langToggle ${lang === "en" ? "active" : ""}`}
+          onClick={() => {
+            if (lang !== "en") toggle();
+          }}
+        >
+          EN
+        </button>
 
-        {/* <span className="divider">|</span> */}
-
-        {/* contact */}
-        <div className="contactWrapper">
-          <a className="contactButton" href="mailto:jozwickiestelle@gmail.com">
-            Email
-          </a>
-        </div>
+        <a className="contactButton" href="mailto:jozwickiestelle@gmail.com">
+          Email
+        </a>
       </div>
     </header>
   );

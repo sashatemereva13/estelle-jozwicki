@@ -66,7 +66,6 @@
 
 /* Shared nav typography */
 
-.langToggle,
 .contactButton {
   background: none;
   border: none;
@@ -85,9 +84,10 @@
   text-decoration: none;
 
   font-family: "SNPro", sans-serif;
+
+  padding: 0.4rem;
 }
 
-.langToggle:hover,
 .contactButton:hover {
   opacity: 1;
 }
@@ -127,44 +127,6 @@
 
 .dropdown a:hover,
 .dropdown a.active {
-  opacity: 1;
-}
-
-/* ========================================
-   CONTACT DROPDOWN
-======================================== */
-
-.contactWrapper {
-  position: relative;
-}
-
-.contactDropdown {
-  position: absolute;
-  top: 2.2rem;
-  right: 0;
-
-  padding: 0.8rem 1rem;
-  background: var(--bg);
-
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-
-  text-align: right;
-}
-
-.contactDropdown a {
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-
-  text-decoration: none;
-  color: var(--text);
-
-  opacity: 0.6;
-  transition: opacity 0.25s;
-}
-
-.contactDropdown a:hover {
   opacity: 1;
 }
 
@@ -212,13 +174,7 @@
    LANGUAGE SWITCH
 ======================================== */
 
-.langSwitch {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.langItem {
+.langToggle {
   background: none;
   border: none;
   cursor: pointer;
@@ -238,11 +194,11 @@
   position: relative;
 }
 
-.langItem:hover {
+.langToggle:hover {
   opacity: 0.8;
 }
 
-.langItem.active {
+.langToggle.active {
   opacity: 1;
 }
 
@@ -255,7 +211,8 @@
     gap: 0.5rem;
   }
 
-  .navRight button {
+  .navRight button,
+  .navRight a {
     padding: 0.3rem;
   }
 
