@@ -19,6 +19,15 @@
   object-fit: cover;
 }
 
+.heroHint {
+  margin: -2rem 0 0;
+  font-family: "SNPro", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 /* description */
 
 .heroDescription {

@@ -14,7 +14,9 @@
 
   padding: 2rem 3rem;
 
-  background: transparent;
+  background: rgba(246, 245, 242, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 100;
 
   font-family: "SNPro", sans-serif;
@@ -239,8 +241,8 @@
   }
 }
 
-@media (max-width: 370px) {
-  .contactWrapper {
+@media (max-width: 500px) {
+  .contactButton {
     visibility: hidden;
   }
   .navRight {

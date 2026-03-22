@@ -57,11 +57,12 @@ export default function Navbar() {
               <NavLink to="/" onClick={() => setOpen(false)}>
                 {t("nav.home")}
               </NavLink>
-              <NavLink to="/a-propos" onClick={() => setOpen(false)}>
-                {t("nav.about")}
-              </NavLink>
+
               <NavLink to="/oeuvres" onClick={() => setOpen(false)}>
                 {t("nav.works")}
+              </NavLink>
+              <NavLink to="/a-propos" onClick={() => setOpen(false)}>
+                {t("nav.about")}
               </NavLink>
               <NavLink to="/contact" onClick={() => setOpen(false)}>
                 {t("nav.contact")}

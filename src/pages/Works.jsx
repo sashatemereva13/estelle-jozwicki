@@ -157,13 +157,15 @@ export default function Works() {
             transition={{ duration: 1.2 }}
           >
             {/* IMAGE */}
-            <img
-              src={current.src}
-              alt={current.title}
-              className="workImage"
-              onClick={nextImage}
-              draggable={false}
-            />
+            <div className="workImageFrame">
+              <img
+                src={current.src}
+                alt={current.title}
+                className="workImage"
+                onClick={nextImage}
+                draggable={false}
+              />
+            </div>
 
             {/* DESCRIPTION */}
             <div className="workDescription">

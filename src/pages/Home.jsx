@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <section className="homePage">
       <img className="heroImage" src={artwork} alt="Œuvre principale" />
+      <p className="heroHint">{t("home.clickHint")}</p>
 
       <p className="heroDescription">{t("home.description1")}</p>
       <p className="heroDescription">{t("home.description2")}</p>

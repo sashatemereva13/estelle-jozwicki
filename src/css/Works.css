@@ -142,7 +142,6 @@
 ======================================== */
 
 .gallerySection {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,8 +152,6 @@
 }
 
 .gallerySection {
-  min-height: 100vh;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,16 +160,24 @@
 .galleryItem {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1rem;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
+.workImageFrame {
+  width: min(95vw, 1200px);
+  height: min(85vh, 44rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .workImage {
-  height: 85vh;
-  width: auto;
-  max-width: 95vw;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 
   cursor: pointer;
@@ -184,19 +189,20 @@
 
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .workDescription p {
   font-size: 1.2rem;
   line-height: 1.8;
   opacity: 0.7;
-  margin: 3rem 0;
+  margin: 0;
 }
 
 .clickHint {
   font-size: 0.75rem;
   letter-spacing: 0.12em;
-  margin-top: -2rem;
+  margin: 0;
 
   opacity: 0.45;
 }
@@ -226,8 +232,9 @@
     max-height: 60vh;
   }
 
-  .workImage {
-    width: 85%;
+  .workImageFrame {
+    width: min(92vw, 900px);
+    height: min(72vh, 36rem);
   }
 }
 
@@ -261,8 +268,9 @@
     margin-top: 1rem;
   }
 
-  .workImage {
-    width: 90%;
+  .workImageFrame {
+    width: 92vw;
+    height: min(60vh, 28rem);
   }
   .workDescription {
     max-width: 90%;
